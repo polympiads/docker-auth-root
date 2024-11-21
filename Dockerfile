@@ -18,3 +18,6 @@ RUN bash test.sh
 
 WORKDIR /app
 COPY . .
+
+EXPOSE 8501
+CMD [ "python3", "manage.py", "runserver", "8501" ]
