@@ -20,4 +20,4 @@ WORKDIR /app
 COPY . .
 
 EXPOSE 8501
-CMD [ "python3", "manage.py", "runserver", "8501" ]
+CMD [ "python3", "manage.py", "runserver", "0.0.0.0:8501" ]
